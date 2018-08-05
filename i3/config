@@ -167,7 +167,9 @@ bindsym $mod+F3 exec --no-startup-id amixer -D pulse set Master 1+ toggle
 bindsym $mod+F5 exec --no-startup-id amixer -D pulse sset Master 5%-
 bindsym $mod+F6 exec --no-startup-id amixer -D pulse sset Master 5%+
 bindsym F7 exec --no-startup-id arandr
-bindsym F11 exec --no-startup-id echo 21220704f. | sudo -S service bluetooth restart
+
+# since gksudo was made deprecated, this requires either pkexec or echo password...
+bindsym F11 exec --no-startup-id sudo -i service bluetooth restart
 
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
@@ -215,7 +217,7 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec --no-startup-id discord
-# exec --no-startup-id compton --config /$HOME/.config/compton/compton.config -b
+# exec --no-startup-id compton --config /home/mika/.config/compton/compton.config b
 
 # Theme colors
 client.focused #EAD49B #1E272B #EAD49B #9D6A47 #9D6A47
