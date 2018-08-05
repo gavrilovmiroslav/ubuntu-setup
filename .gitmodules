@@ -1,0 +1,9 @@
+[submodule "deps/i3"]
+	path = deps/i3
+	url = https://github.com/Airblader/i3.git
+[submodule "deps/polybar"]
+	path = deps/polybar
+	url = https://github.com/jaagr/polybar
+[submodule "deps/rofi"]
+	path = deps/rofi
+	url = https://github.com/DaveDavenport/rofi.git
